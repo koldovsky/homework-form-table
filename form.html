@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Psyhological test</title>
+</head>
+<body>
+    <form method="POST" action="https://formspree.io/mashaklimenko42@gmail.com">
+       <fieldset>
+           <legend>Personal information</legend>
+                <label>Your name:<br>
+                    <input type="text" name="user-name" required/><br>
+                </label>
+                <label>Your lastname:<br>
+                    <input type="text" name="user-lastname" required/><br>
+                </label>
+                <label>Your email:<br>
+                    <input type="email" name="user-email" placeholder="mashaklimenko42@gmail.com" required/>
+                </label>
+        </fieldset>
+        <fieldset>
+            <legend>What is your gender?</legend><br>
+                <label >
+                    <input type="radio" name="gender" value="Male"/>Male    
+                </label>
+                <label >
+                    <input type="radio" name="gender" value="Female"/>Female    
+                </label>
+        </fieldset>
+        <fieldset>
+            <legend>Questions:</legend>
+                <label>How many times do you eat for one day?
+                    <input type="number" name="meals" value="1" min="1" max="10"/>
+                </label>    
+                <p>Are you vegetarian or do you like meat?</p><br>
+                <label>
+                    <input type="radio" name="eat" value="Vegetatian"/>I am Vegetatian
+                </label>
+                <label>
+                    <input type="radio" name="eat" value="Meat"/>I like meat
+                </label><br>
+                <p>What meat do you prefer?</p>
+                <label>Beef
+                    <input type="checkbox" name="beef"/>
+                </label>
+                <label>Pork
+                    <input type="checkbox" name="pork"/>
+                </label>
+                <label>Lamb
+                    <input type="checkbox" name="lamb"/>
+                </label>
+                <label>Chicken
+                    <input type="checkbox" name="chicken"/>
+                </label>
+                <p>What is your favourite kind of fish?</p>
+                <label>Salmon
+                    <input type="checkbox" name="salmon"/>
+                </label>
+                <label>Tuna
+                    <input type="checkbox" name="tuna"/>
+                </label>
+                <label>Trout
+                    <input type="checkbox" name="trout"/>
+                </label><br>
+                <label>What is your favourite restaurant/cafe?
+                    <select name="restaurants">
+                        <option value="chelentano">Chelentano</option>
+                        <option value="yapona">Yapona Hata</option>
+                        <option value="croissants">Croissants</option>
+                        <option value="manufacture">Lviv Coffee Manufacture</option>
+                        <option value="beer">Beer theater "PRAVDA"</option>
+                    </select>
+                </label><br>
+                <label>How many times do you go to a restaurant(in a month)?
+                    <input type="number" name="visit" value="1" min="1" max="30">
+                </label>
+                <p>Do you cook by yourself?</p>
+                <label>
+                    <input type="radio" name="cook" value="Yes"/>Yes
+                </label>
+                <label>
+                    <input type="radio" name="cook" value="No"/>No
+                </label>    
+        </fieldset>
+        <fieldset>
+            <legend>Please, write your comment for us</legend>
+            <label>Your comment:
+                <textarea name="comment" rows="10" cols="40"></textarea>
+            </label>
+        </fieldset>
+     <input type="submit" value="Send"/>
+     <input type="reset" value="Reset"/>
+     </form>
+</body>
+</html>
